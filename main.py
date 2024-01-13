@@ -9,7 +9,7 @@ import random
 import dotenv
 
 
-load_dotenv()
+dotenv.load_dotenv()
 
 
 token = os.getenv("TOKEN")
