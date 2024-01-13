@@ -1,0 +1,11 @@
+# virtual environments
+venv/
+env/
+bin/
+lib/
+include/
+*.egg-info/
+
+# environment configuration
+.env
+.env.local
