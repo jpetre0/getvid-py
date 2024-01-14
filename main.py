@@ -10,6 +10,11 @@ import dotenv
 import psycopg2
 
 
+intents = discord.Intents.default()
+intents.messages = True
+bot = discord.Client(intents=intents)
+
+
 dotenv.load_dotenv()
 
 
@@ -48,3 +53,6 @@ finally:
         cursor.close()
         connection.close()
         print("connection closed.")
+
+
+bot.run(token)
